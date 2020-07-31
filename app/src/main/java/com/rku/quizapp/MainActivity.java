@@ -8,23 +8,22 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import static com.rku.quizapp.R.anim.top_animation;
+
 public class MainActivity extends AppCompatActivity {
+
+    //Animation
     //Variable
-    public Animation topAnim;
-    ImageView image;
+    Animation topAnim;
+    ImageView IM;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-
         //Animation
-        topAnim = AnimationUtils.loadAnimation(this.R.anim.top_animation);
 
-        //Hooks
-        image = findViewById(this.R.id.ImageView);
-
-        image.setAnimation(topAnim);
     }
 }
