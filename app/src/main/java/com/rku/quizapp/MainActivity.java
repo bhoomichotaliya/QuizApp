@@ -23,7 +23,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        //Animation
 
+        IM = (ImageView)findViewById(R.id.ImgLogo);
+        //Animation
+        Animation animation = AnimationUtils.loadAnimation(this, top_animation);
+        IM.startAnimation(animation);
     }
 }
