@@ -8,7 +8,12 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import static com.rku.quizapp.R.anim.mixed_anim;
+import static com.rku.quizapp.R.anim.righttoleft;
+import static com.rku.quizapp.R.anim.rotate;
 import static com.rku.quizapp.R.anim.top_animation;
+import static com.rku.quizapp.R.anim.zoomin;
+import static com.rku.quizapp.R.anim.zoomout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         IM = (ImageView)findViewById(R.id.ImgLogo);
         //Animation
-        Animation animation = AnimationUtils.loadAnimation(this, top_animation);
+        Animation animation = AnimationUtils.loadAnimation(this,rotate );
         IM.startAnimation(animation);
     }
 }

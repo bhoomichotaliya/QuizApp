@@ -6,7 +6,7 @@
     <!-- Move -->
     <scale
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:duration="4000"
+        android:duration="1000"
         android:fromXScale="1"
         android:fromYScale="1"
         android:pivotX="50%"
@@ -21,7 +21,7 @@
         android:fromDegrees="0"
         android:pivotX="50%"
         android:pivotY="50%"
-        android:repeatCount="infinite"
+        android:repeatCount="3"
         android:repeatMode="restart"
         android:toDegrees="360" />
 
