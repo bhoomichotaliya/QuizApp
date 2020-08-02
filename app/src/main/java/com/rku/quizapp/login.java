@@ -25,9 +25,9 @@ public class login extends AppCompatActivity {
         Animation animation = AnimationUtils.loadAnimation(this,bounce);
         btn.startAnimation(animation);
 
-        btn = (Button) findViewById(R.id.btnRegister);
+       /*btn = (Button) findViewById(R.id.btnRegister);
         //Animation
         Animation anim = AnimationUtils.loadAnimation(this,bounce);
-        btn.startAnimation(anim);
+        btn.startAnimation(anim);*/
     }
 }
