@@ -86,4 +86,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
+    <TextView
+        android:id="@+id/txtRegisterLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="190dp"
+        android:text="Create a New Account??"
+        android:textColor="#C5B6B6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkChacked" />
+
+    <TextView
+        android:id="@+id/txtLinkRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="124dp"
+        android:contextClickable="true"
+        android:shadowColor="#C1A00E"
+        android:shadowDx="4"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        android:text="Click Here"
+        android:textColor="#F40707"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtRegisterLink"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,12 +8,14 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import static com.rku.quizapp.R.anim.bounce;
 import static com.rku.quizapp.R.anim.rotate;
 
 public class login extends AppCompatActivity {
     Button btn;
+    TextView txt,txtr1,txtr2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +27,22 @@ public class login extends AppCompatActivity {
         Animation animation = AnimationUtils.loadAnimation(this,bounce);
         btn.startAnimation(animation);
 
-       /*btn = (Button) findViewById(R.id.btnRegister);
+        txt = (TextView) findViewById(R.id.txtLogin);
         //Animation
-        Animation anim = AnimationUtils.loadAnimation(this,bounce);
-        btn.startAnimation(anim);*/
+        Animation anim1 = AnimationUtils.loadAnimation(this,bounce);
+        btn.startAnimation(anim1);
+
+        txtr1 = (TextView) findViewById(R.id.txtRegisterLink);
+        //Animation
+        Animation anim2 = AnimationUtils.loadAnimation(this,bounce);
+        btn.startAnimation(anim2);
+
+        txtr2 = (TextView) findViewById(R.id.txtLinkRegister);
+        //Animation
+        Animation anim3 = AnimationUtils.loadAnimation(this,bounce);
+        btn.startAnimation(anim3);
+
+
+
     }
 }
