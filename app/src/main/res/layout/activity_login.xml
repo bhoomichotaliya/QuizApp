@@ -39,6 +39,7 @@
         android:hint="User Name"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
+        android:textColor="#D59705"
         android:textColorHint="#5C5A5A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,6 +55,7 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="11dp"
+        android:textColor="#FFB300"
         android:textColorHint="#5C5A5A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtUserName" />
