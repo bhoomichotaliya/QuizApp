@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg8"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:id="@+id/txtAboutUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="197dp"
+        android:fontFamily="@font/marko_one"
+        android:text="About Us"
+        android:textColor="#00ACC1"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Our Mission"
+        android:textColor="#BF8A0B"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAboutUS" />
+
+    <TextView
+        android:id="@+id/txtMissionDiscription"
+        android:layout_width="320dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="34dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Our mission is to provide a high-quality, comprehensive, and meaningful education for all students. Each student will be expected to succeed within the bounds of their abilities and chosen educational goals."
+        android:textColor="#FB8C00"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMission" />
+
+    <TextView
+        android:id="@+id/txtOurVision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Our Vision"
+        android:textColor="#08BD0F"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMissionDiscription" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="320dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Our vision is to prepare and motivate our students for a rapidly changing world by instilling in them critical thinking skills, a global perspective, and a respect for core values of honesty, loyalty, perseverance, and compassion."
+        android:textColor="#2D7330"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOurVision" />
+
+    <TextView
+        android:id="@+id/txtFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="296dp"
+        android:text="Developed By:-"
+        android:textColor="#E3DADA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:text="Copyrights ©2020 MCA-Team 7 | Powered By RK University"
+        android:textColor="#FFB300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFooter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
