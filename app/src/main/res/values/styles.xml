@@ -13,8 +13,6 @@
             <color name="secondaryTextColor">#ffffff</color>
             <item name="fontStyle">bold</item>
             <item name="android:gravity">center</item>
-
-
         </style>
 
     </resources>
