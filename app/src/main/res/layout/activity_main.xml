@@ -12,10 +12,6 @@
         android:layout_height="match_parent"
         android:background="@drawable/drawable"
         android:orientation="vertical"></LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
-    android:background="@drawable/bg1"
-    tools:context=".MainActivity">
-
     <ImageView
         android:id="@+id/ImgLogo"
         android:layout_width="wrap_content"
@@ -32,5 +28,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
