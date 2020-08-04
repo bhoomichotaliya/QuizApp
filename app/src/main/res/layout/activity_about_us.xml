@@ -82,12 +82,11 @@
         android:id="@+id/txtFooter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="296dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
         android:text="Developed By:-"
         android:textColor="#E3DADA"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -95,12 +94,11 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
-        android:text="Copyrights ©2020 MCA-Team 7 | Powered By RK University"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:text="Copyrights © 2020 MCA-Team 7 | Powered By RK University"
         android:textColor="#FFB300"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtFooter" />
 

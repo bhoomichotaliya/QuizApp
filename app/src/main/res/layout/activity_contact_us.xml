@@ -159,7 +159,7 @@
         android:shadowColor="#C1901B"
         android:shadowDx="4"
         android:shadowDy="4"
-        android:shadowRadius="2"
+        android:shadowRadius="3"
         android:text="Enquiry Form :"
         android:textColor="#C60505"
         android:textSize="24sp"
