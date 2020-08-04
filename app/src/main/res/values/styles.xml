@@ -1,3 +1,19 @@
+
+    <resources>
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <color name="primaryColor">#691b99</color>
+            <color name="primaryLightColor">#9b4dcb</color>
+            <color name="primaryDarkColor">#37006a</color>
+            <color name="secondaryColor">#546e7a</color>
+            <color name="secondaryLightColor">#819ca9</color>
+            <color name="secondaryDarkColor">#29434e</color>
+            <color name="primaryTextColor">#ffffff</color>
+            <color name="secondaryTextColor">#ffffff</color>
+            <item name="fontStyle">bold</item>
+            <item name="android:gravity">center</item>
+        </style>
 <resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">

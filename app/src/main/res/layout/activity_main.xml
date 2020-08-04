@@ -4,6 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="LyMain"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawable"
+        android:orientation="vertical"></LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
     android:background="@drawable/bg1"
     tools:context=".MainActivity">
 

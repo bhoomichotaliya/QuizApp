@@ -2,9 +2,7 @@ package com.rku.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -13,11 +11,9 @@ import android.widget.ImageView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import static com.rku.quizapp.R.anim.blink_anim;
 import static com.rku.quizapp.R.anim.mixed_anim;
 import static com.rku.quizapp.R.anim.righttoleft;
 import static com.rku.quizapp.R.anim.rotate;
-import static com.rku.quizapp.R.anim.sample_anim;
 import static com.rku.quizapp.R.anim.top_animation;
 import static com.rku.quizapp.R.anim.zoomin;
 import static com.rku.quizapp.R.anim.zoomout;
@@ -37,17 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
         IM = (ImageView)findViewById(R.id.ImgLogo);
         //Animation
-        Animation animation = AnimationUtils.loadAnimation(this,blink_anim );
+        Animation animation = AnimationUtils.loadAnimation(this,rotate );
         IM.startAnimation(animation);
 
-        new Timer().schedule(new TimerTask(){
-            public void run() {
-                startActivity(new Intent(MainActivity.this, login.class));
-                finish();
 
-                Log.d("MainActivity:", "onCreate: waiting 5 seconds for MainActivity... loading PrimaryActivity.class");
-            }
-        }, 5000 );
 
     }
 }
