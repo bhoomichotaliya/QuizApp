@@ -2,13 +2,18 @@ package com.rku.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static com.rku.quizapp.R.anim.bounce;
 import static com.rku.quizapp.R.anim.rotate;
@@ -21,6 +26,14 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
+        new Timer().schedule(new TimerTask(){
+            public void run() {
+                startActivity(new Intent(login.this, contact_us.class));
+                finish();
+
+                Log.d("MainActivity:", "onCreate: waiting 5 seconds for MainActivity... loading PrimaryActivity.class");
+            }
+        }, 5000 );
 
         btn = (Button) findViewById(R.id.btnLogin);
         //Animation

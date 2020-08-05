@@ -1,11 +1,8 @@
 package com.rku.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.widget.LinearLayout;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -31,15 +28,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.LyMain);
 
-        AnimationDrawable animationDrawable = (AnimationDrawable) linearLayout.getBackground();
+        IM = (ImageView)findViewById(R.id.ImgLogo);
+        //Animation
+        Animation animation = AnimationUtils.loadAnimation(this,rotate );
+        IM.startAnimation(animation);
 
-        animationDrawable.setEnterFadeDuration(2500);
-        animationDrawable.setExitFadeDuration(5000);
 
-        animationDrawable.start();
 
     }
 }
