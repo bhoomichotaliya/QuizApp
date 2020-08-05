@@ -42,6 +42,7 @@
         android:textColor="#D59705"
         android:textColorHint="#5C5A5A"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
 
@@ -49,8 +50,8 @@
         android:id="@+id/edtPassword"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
