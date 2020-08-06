@@ -143,12 +143,13 @@
         android:id="@+id/txtEmail2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="91dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="127dp"
         android:text="M.A456@gmail.com"
         android:textColor="#04ABBF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgContact"
+        app:layout_constraintStart_toEndOf="@+id/imgEmail"
         app:layout_constraintTop_toBottomOf="@+id/txtEmail1" />
 
     <TextView
@@ -171,14 +172,14 @@
         android:id="@+id/txtEmail1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="91dp"
-        android:text="d.R857@gmail.com"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="133dp"
+        android:text="D.R857@gmail.com"
         android:textColor="#04ABBF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
-        app:layout_constraintStart_toEndOf="@+id/imgContact"
+        app:layout_constraintStart_toEndOf="@+id/imgEmail"
         app:layout_constraintTop_toBottomOf="@+id/txtContact2" />
 
     <EditText
@@ -188,7 +189,7 @@
         android:layout_marginStart="51dp"
         android:layout_marginTop="23dp"
         android:layout_marginEnd="60dp"
-        android:background="#00897B"
+        android:background="@drawable/er_style"
         android:ems="10"
         android:hint="Enter Your Name"
         android:inputType="textPersonName"
@@ -206,11 +207,13 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="26dp"
         android:layout_marginEnd="59dp"
-        android:background="#00897B"
+        android:background="@drawable/er_style"
         android:ems="10"
         android:gravity="start|top"
         android:hint="Type Your Message Here......"
         android:inputType="textMultiLine"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtUserName" />
@@ -222,27 +225,12 @@
         android:layout_marginStart="53dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="58dp"
-        android:background="@android:color/holo_orange_dark"
+        android:background="@drawable/er_button"
         android:fontFamily="@font/marko_one"
         android:text="Submit"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtMessage" />
-
-    <Button
-        android:id="@+id/btnAboutUs"
-        android:layout_width="80dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:color/holo_orange_light"
-        android:text="About Us"
-        android:textColor="#020202"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtContactUs"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
