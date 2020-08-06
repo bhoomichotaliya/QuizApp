@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">QuizApp</string>
-
+    <!--<string name="app_name">QuizApp</string>-->
     <string name="app_name">Quiz_Planet</string>
     <string name="hello_world" />
 </resources>

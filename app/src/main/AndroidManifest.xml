@@ -11,15 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
-
-        <activity android:name=".MainActivity"></activity>
         <activity android:name=".AboutUs">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity android:name=".contact_us">
@@ -27,7 +20,13 @@
         </activity>
         <activity android:name=".login" />
         <activity android:name=".MainActivity"
-            tools:ignore="DuplicateActivity" />
+            tools:ignore="DuplicateActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

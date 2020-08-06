@@ -2,7 +2,9 @@ package com.rku.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -36,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
         Animation animation = AnimationUtils.loadAnimation(this,rotate );
         IM.startAnimation(animation);
 
+        new Timer().schedule(new TimerTask(){
+            public void run() {
+                startActivity(new Intent(MainActivity.this, login.class));
+                finish();
+
+                Log.d("MainActivity:", "onCreate: waiting 5 seconds for MainActivity... loading PrimaryActivity.class");
+            }
+        }, 5000 );
 
 
     }

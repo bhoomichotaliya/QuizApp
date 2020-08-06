@@ -25,6 +25,6 @@ public class contact_us extends AppCompatActivity {
 
                 Log.d("MainActivity:", "onCreate: waiting 5 seconds for MainActivity... loading PrimaryActivity.class");
             }
-        }, 10000 );
+        }, 5000 );
     }
 }
